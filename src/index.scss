@@ -11,7 +11,7 @@ $lightcolor: rgb(231, 226, 181);
 }
 
 #root{
-    width: 100vw;
+    width: 100dvw;
 }
 
 body{
@@ -144,6 +144,11 @@ Link{
     grid-row: 2/3;
 }
 
+.location{
+    width: 350px;
+    height: 200px;
+}
+
 #phone a{
     text-decoration: none;
     color: darkorange;
@@ -177,7 +182,7 @@ footer a{
 }
 
 .boxmain{
-    height: 100vh;
+    height: 100dvh;
     padding: 10em 20em 15em 20em;
     margin-top: 0;
     object-fit: cover;
@@ -230,15 +235,15 @@ footer a{
 }
 
 .boxmain-menu{
-    height: 200vh;
+    height: auto;
     padding: 2em 2em 2em 2em;
     margin-top: 0;
     object-fit: cover;
     background-color:  rgb(11, 101, 62, 0.9);
     color: $lightcolor;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .menu-btns{
@@ -312,7 +317,7 @@ footer a{
     align-items: center;
     border-radius: 7px;
     box-shadow: 0px 0px 5px 2px black;
-    height: 100vh;
+    height: 100dvh;
     padding: 20em 10em 0em 10em;
     margin-top: 0;
     object-fit: cover;
@@ -501,13 +506,13 @@ footer a{
     body {
         --bs-gutter-x: 0;
         --bs-gutter-y: 0;
-        width: 100vw;
+        width: 100%;
         // padding-right: calc(var(--bs-gutter-x) * 0.5);
         // padding-left: calc(var(--bs-gutter-x) * 0.5);
         margin-right: auto;
         margin-left: auto;
     }
-
+    
     .navbar {
         display: none;
     }
@@ -529,6 +534,7 @@ footer a{
         height: 65px;
         position: fixed;
         --bs-bg-opacity: 0.75;
+        z-index: 3;
     }
 
     // .container-fluid, 
@@ -573,7 +579,12 @@ footer a{
     }
 
     .box1{
-        padding: 5em 1em 1em 1em;
+        padding: 5em 2em 1em 2em;
+        max-width: 100%;
+        margin-top: 15vh;
+        object-fit: contain;
+        background-color: rgb(231, 226, 181, 0.9);
+        color: $primarygreen;
         
     }  
 
@@ -627,7 +638,7 @@ footer a{
     .landp-btn{
         width: 300px;
         height: 75px;
-        margin: 0em 2em 1em 2em;
+        margin: 0em 0em 1em 0em;
         font-size: 1.5em;
     }
 
@@ -637,13 +648,15 @@ footer a{
 
     .box2 {
         padding: 5em 2em 4em 2em;
+        object-fit: fill;
     }  
     
     .box3 {
-        grid-template-columns: 1fr 400px 1fr;
+        grid-template-columns: 1fr 80vw 1fr;
         grid-template-rows: auto;
         margin: 0;
         padding-top: 1em;
+        object-fit: fill;
     }
 
     .b3header{
@@ -660,6 +673,12 @@ footer a{
         grid-column: 2/3;
         grid-row: 2/3;
     }
+
+    .location{
+        width: 300px;
+        height: 200px;
+    }
+
 
     #social {
         grid-column: 2/3;
@@ -693,8 +712,8 @@ footer a{
     }
 
     .boxmain{
-        height: 100vh;
-        width: 100vw;
+        height: 100dvh;
+        width: 100dvw;
         padding: 10em 2em 10em 2em;
         margin-top: 0;
         object-fit: cover;
@@ -711,14 +730,21 @@ footer a{
     }
 
     .boxmain-menu {
-        padding-top: 5em;
+        padding-top: 1em;
         padding-bottom: 20em;
         padding-left: 0;
         padding-right: 0;
-        height: 140vh;
+        height: auto;
         justify-content: center;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(50, 1fr);
+        grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .card{
+        margin: 0;
+        max-width: 50vw;
+        display: inline-block;
+        z-index: 2;
     }
 
     .btn-secondary {
@@ -732,7 +758,7 @@ footer a{
 
     .menuframe {
         height: 50vh;
-        width: 100vw;
+        width: 100dvw;
     }
 
     .iframe-menu {

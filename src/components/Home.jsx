@@ -72,12 +72,14 @@ function Home() {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="box3 object-fit-fill rounded" id="location">
+                    <div className="box3 object-fit-fill rounded" >
                         <div className="b3header" id="location"><h2>Location</h2></div>
                         <div className="b3header" id="social"><h2>Socials</h2></div>
                         <div className="b3header" id="hour"><h2>Hours</h2></div>
                         <div id="map"> 
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.5595662337255!2d-121.74097718467156!3d38.54391967962665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808529739a312065%3A0x353105b92f5a6cf0!2sOpen%20Rice%20Kitchen!5e0!3m2!1sen!2sus!4v1677098578309!5m2!1sen!2sus" width="350" height="200" loading="lazy"></iframe>
+                            <iframe className='location' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.5595662337255!2d-121.74097718467156!3d38.54391967962665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808529739a312065%3A0x353105b92f5a6cf0!2sOpen%20Rice%20Kitchen!5e0!3m2!1sen!2sus!4v1677098578309!5m2!1sen!2sus" loading="lazy"></iframe>
+                            <br />
+                            204 G Street Davis CA 95616
                         </div>
                         <div className="socials">
                             <br/><br/>

@@ -105,7 +105,7 @@ function Mobile() {
                 <div className="mobile-nav bg-dark">
                     <Link to='/'>
                         <a href="" className="nav-item logo-mobile">
-                            <img  src={logo} alt="orklogo" width="50px" height="50px"/>
+                            <img src={logo} alt="orklogo" width="50px" height="50px"/>
                         </a> 
                     </Link>
                     <button type="button" className="btn btn-primary btn-med mobile-btn">
@@ -118,11 +118,11 @@ function Mobile() {
                 <div className={sidemenu} >
                     <ul>
                         <Link to='/'>
-                            <li><a href="">Home</a></li>
+                            <li><a href="" onClick={mobileMenu}>Home</a></li>
                         </Link>
                         {/* <li><a onClick={menu2Push}><u>Menus</u></a> </li> */}
                         <Link to='/menus'>
-                            <li><a href="">Menus</a></li>
+                            <li><a href="" onClick={mobileMenu}>Menus</a></li>
                         </Link>
                         <Link to='/catering'>
                             <li className><a href="">Catering</a></li>

@@ -39,11 +39,11 @@ function Nav() {
                                 <a className="nav-link" >Catering</a>
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link to='/' style={{ textDecoration: 'none' }}>
                                 <a className="nav-link">Location</a>
                             </Link>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             <Link to='/contact' style={{ textDecoration: 'none' }}>
                                 <a className="nav-link" >Contact</a>
